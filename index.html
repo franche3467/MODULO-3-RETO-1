@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+	<meta charset="UTF-8">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<title>Convertidor de Divisas</title>
+	<link href="styles/styles.css" rel="stylesheet">
+</head>
+
+<body>
+	<div class="card" style="width: 18rem;">
+
+		<h1 class="heading text-center display-2">
+			Convertidor de Divisas</h1>
+		<div id="Calculadora" class="card-body">
+
+			<div class="image">
+				<img src="imagen.jpg" class="card-img" alt="Currencies" width="100px">
+      </div>
+
+				<form id="Calculadora" class="row">
+					<input id="cantidad-dinero" class="form-control form-control-lg" type="value" placeholder="Cantidad de Dinero" aria-label=".form-control-lg example">
+          <div class="col-sm-6">
+						<div class="input-group mb-3">
+							<span class="input-group-text">De</span>
+							<select class="form-control from" id="moneda-origen">
+                        </select>
+							<span class="input-group-text">A</span>
+							<select class="form-control to" id="moneda-destino">
+                      </select>
+						</div>
+					</div>
+
+					<div class="text-center">
+
+						<button class="btn btn-primary convert m-2"
+                    onclick="convertir(this)"
+                    type="submit">
+                 Convertir</button>
+
+						<button class="btn btn-primary m-2"
+                    onclick="clearVal(this)"
+                    type="submit">
+               Borrar</button>
+					</div>
+
+				</form>
+
+				<div id="finalAmount" class="text-center">
+
+					<h2>Resultado Divisa:
+						<span id="finalValue"
+                  style="color:blue;">
+       </span>
+					</h2>
+
+				</div>
+			</div>
+
+			<script src="scripts/script.js" type="module"></script>
+			<script src="data/data.js" type="module"></script>
+</body>
+
+</html>
